@@ -1,0 +1,39 @@
+
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: 200px;
+    transform: translate(-70%, -50%);
+    background: #041d1780;
+    padding: 100px;
+    width: 270px;
+    box-shadow: 0px 0px 25px 5px black;
+    border-radius: 10px;
+}
+
+.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    background: #041d1780;
+    padding: 50px;
+    width: 270px;
+    box-shadow: 0px 0px 25px 5px black;
+    border-radius: 15px;
+  }
+
+  .box-login {
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    border-bottom: 2px solid white;
+    padding: 8px 0;
+  }
+
+  .tengah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 

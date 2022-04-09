@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #041d1780;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<title>Register</title>
+</head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<body>
+
+<div class="sidenav">
+  <a href="index.html">Registrasi</a>
+  <a href="login.html">Login</a>
+  <a href="data.html">Data Vaksin</a>
+</div>
+
+<div class="main">
+  <h2>Input Riwayat Vaksin :</h2>
+  <form>
+    Nama :
+    <input type="text" name="nama"/>
+
+    <hr />
+    Jenis Vaksin : 
+    <select name="vaksin">
+        <option value="sinovac" selected>Sinovac</option>
+        <option value="astra">Astra Zeneca</option>
+        <option value="Moderna">Moderna</option>
+    </select>
+
+    <hr />
+    Tanggal Vaksin :
+    <input type="date" id="tanggal" name="tanggal">
+    
+    <hr />
+    Waktu Vaksin :
+    <input type="time" id="appt" name="appt">
+
+    <hr />
+    <div class="tengah">
+    <input type="submit" Value="Submit" />
+    </div>    
+  </form>
+</div>
+   
+</body>
+</html> 
